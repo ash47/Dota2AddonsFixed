@@ -1,0 +1,70 @@
+// No spaces in event names, max length 32
+// All strings are case sensitive
+//
+// valid data key types are:
+//   string : a zero terminated string
+//   bool   : unsigned int, 1 bit
+//   byte   : unsigned int, 8 bit
+//   short  : signed int, 16 bit
+//   long   : signed int, 32 bit
+//   float  : float, 32 bit
+//   uint64 : unsigned int 64 bit
+//   local  : any data, but not networked to clients
+//
+// following key names are reserved:
+//   local      : if set to 1, event is not networked to clients
+//   unreliable : networked, but unreliable
+//   suppress   : never fire this event
+//   time	: firing server time
+//   eventid	: holds the event ID
+
+"CustomEvents"
+{
+	"nian_damaged"
+	{
+		"damage"					"long"
+		"player_id"					"short"
+		"damage_x"					"long"
+		"damage_y"					"long"
+		"damage_z"					"long"
+		"attachment"				"short"
+	}
+
+	"spring_festival_difficulty"
+	{
+		"difficulty"				"byte"
+	}
+
+	"spring_festival_show_end_panel"
+	{
+		"nDamageDone"					"long"
+		"bTimeout"						"bool"
+
+		"Player_0_HeroName"				"string"
+		"Player_0_PremiumPoints"		"short"
+		"Player_0_Rank"					"short"
+
+		"Player_1_HeroName"				"string"
+		"Player_1_PremiumPoints"		"short"
+		"Player_1_Rank"					"short"
+
+		"Player_2_HeroName"				"string"
+		"Player_2_PremiumPoints"		"short"
+		"Player_2_Rank"					"short"
+
+		"Player_3_HeroName"				"string"
+		"Player_3_PremiumPoints"		"short"
+		"Player_3_Rank"					"short"
+
+		"Player_4_HeroName"				"string"
+		"Player_4_PremiumPoints"		"short"
+		"Player_4_Rank"					"short"
+	}
+
+	
+	"dota_buyback"
+	{
+		"entindex"					"long"
+	}
+}
+

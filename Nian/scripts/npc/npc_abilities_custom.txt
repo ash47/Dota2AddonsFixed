@@ -1,0 +1,1411 @@
+
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+	//=================================================================================================================
+	// Nian: Right Claw Attack
+	//=================================================================================================================
+	"animated_right_claw_swipe"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7000"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"AbilityDamage"					"750 1000 1250 1500"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"300"
+		"AbilityCastPoint"				"1.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"750"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_radius"				"130"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"animation_time"			"1.3"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"knockback_duration"		"0.25"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"knockback_distance"		"375"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Left Claw Attack
+	//=================================================================================================================
+	"animated_left_claw_swipe"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7001"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"AbilityDamage"					"750 1000 1250 1500"
+
+			// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"300"
+		"AbilityCastPoint"				"1.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"750"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_radius"				"130"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"animation_time"			"1.3"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"knockback_duration"		"0.75"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"knockback_distance"		"600"
+			}
+		}
+	}
+	//=================================================================================================================
+	// Nian: Dive
+	//=================================================================================================================
+	"nian_dive"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7002"	
+		"AbilityName"					"nian_dive"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"AbilityDamage"					"750 1000 1250 1500"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+		"AbilityCastPoint"				"0.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pounce_distance"		"30000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pounce_speed"			"1500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pounce_acceleration"	"7000.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pounce_radius"			"200"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pounce_damage"			"35"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"leash_duration"		"3.5"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"leash_radius"			"325"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"initial_delay"			"0.6666"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"landing_delay"			"2.23" //"0.7"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stun_radius"			"150"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"0.2"
+			}
+			"12"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"claw_damage"			"1500"
+			}
+			"13"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"claw_damage_radius"	"150"
+			}
+			"14"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"claw_knockback_duration"			"0.25"
+			}
+			"15"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"claw_knockback_distance"			"375"
+			}
+			"16"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"claw_damage_delay"			"1.0"
+			}
+			"17"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"claw_damage_duration"		"1.0"
+			}
+			"18"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"vertical_adjust"			"5.0"
+			}
+			"19"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"vertical_adjust_max_distance"		"3000.0"
+			}
+			"20"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"vertical_adjust_min_distance"		"500.0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Frenzy
+	//=================================================================================================================
+	"nian_frenzy"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7003"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityName"					"nian_frenzy"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"3.00"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"750"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_radius"			"90"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"initial_rise_time"		"0.5"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"right_swipe_time"		"1.9"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"left_swipe_time"		"1.9"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"dive_distance"			"300.0"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"knockback_duration"		"0.15"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"knockback_distance"		"50"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"knockdown_duration"		"10.0"
+			}
+			"10"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"stun_radius"				"350"
+			}
+			"11"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"5.0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Roar
+	//=================================================================================================================
+	"nian_roar"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7004"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"MaxLevel"						"1"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		"AbilityDamage"					"1000"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"1.96"
+		"AbilityChannelTime"			"10.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"base_projectiles"	"12"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"projectile_step"	"1"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"base_speed"				"250"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"speed_step"				"50"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"initial_radius"	"50"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"end_radius"		"150"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"1000"
+			}
+			"08"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"base_interval"			"1.5"
+			}
+			"09"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"interval_step"			"0.07"
+			}
+			"10"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"max_projectiles"	"12"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Apocalypse
+	//=================================================================================================================
+	"nian_apocalypse"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7005"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"MaxLevel"						"1"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		"AbilityDamage"					"200"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.63"
+		"AbilityChannelTime"			"8.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"area_of_effect"		"200"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"delay"					"2.5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage"				"200.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"3.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fire_interval"			"0.5"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"target_range"			"3500"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Tail Spin
+	//=================================================================================================================
+	"animated_tail_spin"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7006"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"MaxLevel"						"1"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"AbilityDamage"					"1500"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"200"
+		"AbilityCastPoint"				"2.1"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10.0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"1500"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_radius"				"100"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"animation_time"			"2.7"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"knockback_duration"		"0.25"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"knockback_distance"		"375"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Charge
+	//=================================================================================================================
+	"nian_charge"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7007"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_ALERT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"1.73"
+		"AbilityCastRange"				"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+		"AbilityChannelTime"			"25.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"100 100 100 100"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	".30" // applies multiple modifiers
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_speed"		"600 650 700 750"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"1.2 1.6 2.0 2.4"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bash_radius"			"300 300 300 300"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_radius"			"400 400 400 400"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"vision_duration"		"0.94 0.94 0.94 0.94"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"knockback_duration"		"0.75"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"knockback_distance"		"600"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"charge_damage"				"500"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"pinned_damage_amount"		"300"
+			}
+			"10"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"pinned_damage_interval"	"1.0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Greater Bash
+	//=================================================================================================================
+	"nian_greater_bash"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7008"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.5 1.5 1.5 1.5"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportBonus"	"40"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"chance_pct"			"17 17 17 17"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage"				"10 20 30 40"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"1.0 1.2 1.4 1.6"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"knockback_duration"	"0.5 0.5 0.5 0.5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"knockback_distance"	"143 152 158 162"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"knockback_height"		"50 50 50 50"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed_pct"	"15 15 15 15"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"movespeed_duration"	"3.0 3.0 3.0 3.0"
+			}
+		}
+	}
+
+
+	//=================================================================================================================
+	// Nian: Tail Swipe
+	//=================================================================================================================
+	"nian_tail_swipe"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7009"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"AbilityDamage"					"750"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		
+		"MaxLevel"						"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"2500"
+		"AbilityCastPoint"				"1.9"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"speed"						"600"
+			}
+
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"starting_width"			"1000"
+			}
+
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"ending_width"				"3000"
+			}
+
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"4"
+			}
+
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"5"
+			}
+
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"fly_distance"				"650"
+			}
+
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"fly_duration"				"1.0"
+			}
+
+			"08"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"offset"					"300"
+			}
+		}
+	}
+
+	"nian_damage_reflection"
+	{
+		"ID"	"7010"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"BaseClass" 					"ability_datadriven"
+		"MaxLevel"						"1"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"30.0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target" "CASTER"
+				"ModifierName" "modifier_nian_damage_reflection"
+				"Duration" "10"
+			}
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"delay"						"2"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"reflection_amount"			"0.5"
+			}
+
+		}
+	}
+	
+	//=================================================================================================================
+	// Nian: Hurricane
+	//=================================================================================================================
+	"nian_hurricane"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7011"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"MaxLevel"						"1"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.63"
+		"AbilityChannelTime"			"12.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		"AbilityDamage"					"1250"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"215"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movespeed_bonus"			"-35"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_duration"				"4.0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"1.53"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"delay"						"2.5"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"min_distance"				"100"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"max_distance"				"2000"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"fire_interval"				"1.33"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"torrent_count"				"3"
+			}
+			"10"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"pull_speed"				"200"
+			}
+			"11"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"pull_switch_interval"		"2.0"
+			}
+			"12"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"game_time_wind_activation"		"300.0"
+			}
+
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Whirlpool
+	//=================================================================================================================
+	"nian_whirlpool"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7012"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"MaxLevel"						"1"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.63"
+		"AbilityChannelTime"			"2.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		"AbilityDamage"					"1250"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"pull_radius"				"200"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"pull_speed"				"65"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"tick_rate"					"0.1"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"whirlpool_damage"			"75"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"min_distance"				"100"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"max_distance"				"1200"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"fire_interval"				"1.5"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"pool_count"				"1"
+			}
+		}
+	}
+
+
+	"nian_stone_gaze"
+	{
+		"ID"							"7012"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"BaseClass"						"ability_datadriven"
+		"MaxLevel"						"1"
+		"AbilityCastRange"				"700"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+	
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		"OnSpellStart"
+		{
+			"ApplyModifier"
+			{
+				"Target"	"CASTER"
+				"ModifierName" "modifier_medusa_stone_gaze"
+				"Duration" "4"
+			}
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"900"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow"						"50"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stone_duration"			"3.0 3.0 3.0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"face_duration"				"2.0 2.0 2.0"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"vision_cone"				"0.08715"		// 85 degree cone
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"6.0 6.0 6.0"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_physical_damage"		"50 50 50"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Eruption
+	//=================================================================================================================
+	"nian_eruption"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7014"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"MaxLevel"						"1"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"0.63"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius_locations"			"1000"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"num_locations"				"3"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"tick_count"				"3"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"beam_radius"				"150"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"explosion_duration"		"15.0"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"explosion_radius"			"400"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_interval"			"0.5"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"200"
+			}
+		}
+	}
+	"nian_sigils"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7015"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"MaxLevel"						"1"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityCastPoint"				"1.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+			
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"sigil_radius"				"600"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"sigil_duration"			"120.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"move_slow"					"10 15 20 25"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attack_slow"				"30 40 50 60"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"sigil_count"				"5"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"sigil_level"				"4"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"world_bounds_inset"		"1500.0"
+			}
+		}
+	}
+	//=================================================================================================================
+	// Nian: Waterball
+	//=================================================================================================================
+	"nian_waterball"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7012"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"MaxLevel"						"1"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+		"AbilityDamage"					"1000"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1200"
+		"AbilityCastPoint"				"1.5"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"waterball_hit_damage"	"1500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"expire_time"			"10.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"trail_damage_radius"	"125"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"trail_damage_per_second"	"500"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"trail_damage_expire_time"	"5.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"2.5"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Potion Dropper
+	//=================================================================================================================
+	"nian_potion_dropper"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"BaseClass"						"ability_datadriven"
+		"AbilityTextureName"			"item_hand_of_midas"
+
+		// Modifiers
+		//-------------------------------------------------------------------------------------------------------------
+		"Modifiers"
+		{
+			"modifier_potion_dispenser"
+			{
+				"IsHidden"				"1"
+				"Passive"				"1"
+
+				"OnTakeDamage"
+				{
+					"Random"
+					{
+						"Chance"       "1"
+						"OnSuccess"		
+						{
+							"CreateItem"
+							{
+								"Target"			"UNIT"
+								"ItemName"			"item_greater_salve"
+								"SpawnRadius"		"0"
+								"ItemChargeCount"	"1"
+								"LaunchDistance"	"?200 350"
+								"LaunchHeight"		"300"
+								"LaunchDuration"	"0.75"
+							}
+						}
+						"OnFailure"
+						{
+						}
+					}
+					"Random"
+					{
+						"Chance"       "1"
+						"OnSuccess"		
+						{
+							"CreateItem"
+							{
+								"Target"			"UNIT"
+								"ItemName"			"item_greater_clarity"
+								"SpawnRadius"		"0"
+								"ItemChargeCount"	"1"
+								"LaunchDistance"	"?200 350"
+								"LaunchHeight"		"300"
+								"LaunchDuration"	"0.75"
+							}
+						}
+						"OnFailure"
+						{
+						}
+					}
+				}
+			}
+		}
+
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+		}
+	}
+
+	//=================================================================================================================
+	// Nian: Leap (non hostile jump used to enter/exit the level)
+	//=================================================================================================================
+	"nian_leap"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"7013"	
+		"AbilityName"					"nian_leap"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"            "jakiro_liquid_fire"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1.0"
+		"AbilityCastPoint"				"0.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pounce_distance"		"30000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pounce_speed"			"1500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"pounce_acceleration"	"7000.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"initial_delay"			"0.6666"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"landing_delay"			"2.87"
+			}
+		}
+	}
+}
