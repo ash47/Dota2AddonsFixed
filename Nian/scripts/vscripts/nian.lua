@@ -75,8 +75,8 @@ function NianGameMode:InitGameMode()
 
 	PrecacheUnitByName( "npc_dota_nian" )
 
-	--self._scriptBind:BeginThink( "NianGameMode", Dynamic_Wrap( NianGameMode, 'Think' ), 0.25 )
-	self.thinkHookStop = completeHack( "NianGameMode", Dynamic_Wrap( NianGameMode, 'Think' ), 0.25, self)
+	-- Set the thinker up
+	Entities:FindAllByClassname('dota_base_game_mode')[1]:SetThink('Think', 'NianGameMode', 0.25, self)
 
 	self.endRoundDisplayed = false
 end
@@ -108,14 +108,11 @@ function NianGameMode:Think()
 
 		if GameRules:GetMatchSignoutComplete() then
 			self:_showRoundEndSummary( GameRules:GetNianTotalDamageTaken(), false )
-			--self._scriptBind:EndThink( "NianGameMode" )
-			self.thinkHookStop()
 		elseif GameRules:DidMatchSignoutTimeOut() then
 			self:_showRoundEndSummary( GameRules:GetNianTotalDamageTaken(), true )
-			--self._scriptBind:EndThink( "NianGameMode" )
-			self.thinkHookStop()
 		end
 
+		-- Stop thinking
 		return
 	end
 
@@ -277,6 +274,9 @@ function NianGameMode:Think()
 			end
 		end
 	end
+
+	-- Run again in 0.25
+	return 0.25
 end
 
 --------------------------------------------------------------------------------

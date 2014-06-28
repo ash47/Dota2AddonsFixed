@@ -22,32 +22,4 @@ function Dynamic_Wrap( mt, name )
 	end
 end
 
-function completeHack(name, func, delay, scope)
-	local thinker = Entities:FindAllByClassname('dota_base_game_mode')[1]
-    local n = '2'
-    local doit = true
-    local function thinkFix()
-    	if not doit then return end
-
-        -- Requeue this think
-        thinker:SetContextThink(name..n, thinkFix, delay)
-
-        -- Cycle events
-        if n == '' then
-        	n = '2'
-        else
-        	n = ''
-        end
-
-        -- Run normal think
-        func(scope)
-    end
-
-    thinker:SetContextThink(name, thinkFix, delay)
-
-    return function()
-    	doit = false
-	end
-end
-
 require( "nian" )
